@@ -1,3 +1,1 @@
-export function returnTrue() {
-  return true;
-}
+export { debounce } from "./debounce";
