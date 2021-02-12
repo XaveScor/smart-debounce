@@ -1,5 +1,9 @@
 {
+  "include": ["src/**/*"],
   "compilerOptions": {
     "baseUrl": ".",
+    "declaration": true,
+    "emitDeclarationOnly": true,
+    "outDir": "dist/types"
   }
 }

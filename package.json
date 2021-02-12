@@ -5,7 +5,9 @@
   "main": "index.js",
   "scripts": {
     "test": "jest",
-    "build": "rollup -c"
+    "build": "rm -rf ./dist && npm run build:source && npm run build:dts && cp ./dist.template/package.json ./dist",
+    "build:source": "rollup -c",
+    "build:dts": "tsc"
   },
   "keywords": [],
   "author": "",

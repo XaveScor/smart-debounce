@@ -1,0 +1,10 @@
+{
+  "name": "smart-debounce",
+  "version": "0.0.0",
+  "description": "",
+  "main": "index.js",
+  "types": "types/index.d.ts",
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
