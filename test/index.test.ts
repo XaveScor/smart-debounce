@@ -14,6 +14,7 @@ describe("simple debounce", () => {
     const debouncedFn = debounce(fn, { maxTimeout: 50 });
 
     expect(fn).toBeCalledTimes(0);
+    expect(fn).toBeCalledTimes(0);
 
     debouncedFn();
     jest.runTimersToTime(10);
