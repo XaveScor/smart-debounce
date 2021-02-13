@@ -1,4 +1,5 @@
 import { debounce } from "../src";
+import { expectType } from "tsd";
 
 describe("simple debounce", () => {
   beforeEach(() => {
@@ -27,5 +28,11 @@ describe("simple debounce", () => {
 
     jest.runTimersToTime(1);
     expect(fn).toBeCalledTimes(1);
+  });
+
+  it("types", () => {
+    const fn = (a: number, b: string) => {};
+
+    expectType<typeof fn>(debounce(fn));
   });
 });
